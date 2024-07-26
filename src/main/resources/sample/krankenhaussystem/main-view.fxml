@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.krankenhaussystem.MainController">
+   <children>
+      <ImageView fitHeight="806.0" fitWidth="1300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Background.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="49.0" layoutY="76.0" prefHeight="621.0" prefWidth="386.0" style="-fx-background-color: rgba(255,255,255,0.35); -fx-background-radius: 20;">
+         <children>
+            <GridPane layoutX="14.0" layoutY="10.0" prefHeight="595.0" prefWidth="355.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="185.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="170.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="35.0" prefWidth="125.0" text="Vorname" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="125.0" text="Nachname" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="37.0" prefWidth="166.0" text="Geburtsdatum" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="125.0" text="Email" textFill="WHITE" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="125.0" text="TelefonNr" textFill="WHITE" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="125.0" text="Geschlecht" textFill="WHITE" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="148.0" text="Str.Haus Nr" textFill="WHITE" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="125.0" text="PLZ" textFill="WHITE" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="125.0" text="Land" textFill="WHITE" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="167.0" text="Einchecken" textFill="WHITE" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="161.0" text="Outchecken" textFill="WHITE" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="125.0" text="Abteilung" textFill="WHITE" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="125.0" text="Raumtype" textFill="WHITE" GridPane.rowIndex="12">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="197.0" text="VersicherungNr" textFill="WHITE" GridPane.rowIndex="13">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name" prefHeight="35.0" prefWidth="170.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="insuranceNumber" prefHeight="35.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                  <TextField fx:id="country" prefHeight="35.0" prefWidth="170.0" text="Deutschland" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextField fx:id="plz" prefHeight="35.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="street" prefHeight="35.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="phone" prefHeight="35.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="email" prefHeight="35.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="surname" prefHeight="35.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <DatePicker fx:id="birthday" editable="false" prefHeight="33.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <DatePicker fx:id="checkOut" editable="false" prefHeight="33.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <DatePicker fx:id="checkIn" editable="false" prefHeight="33.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <ComboBox fx:id="gender" prefHeight="35.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <ComboBox fx:id="roomtype" prefHeight="35.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <ComboBox fx:id="section" prefHeight="35.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Pane layoutX="866.0" layoutY="76.0" prefHeight="621.0" prefWidth="404.0" style="-fx-background-color: rgba(255,255,255,0.35); -fx-background-radius: 20;">
+         <children>
+            <Pane layoutX="18.0" layoutY="22.0" prefHeight="573.0" prefWidth="366.0" style="-fx-background-color: white;">
+               <children>
+                  <TextArea fx:id="bill" editable="false" layoutX="-6.0" layoutY="-6.0" prefHeight="585.0" prefWidth="379.0" style="-fx-padding: 20; -fx-wrap-text: true;" wrapText="true" />
+               </children></Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="457.0" layoutY="76.0" prefHeight="621.0" prefWidth="386.0" style="-fx-background-color: rgba(255,255,255,0.35); -fx-background-radius: 20;">
+         <children>
+            <VBox layoutX="16.0" layoutY="18.0" prefHeight="584.0" prefWidth="355.0">
+               <children>
+                  <HBox prefHeight="53.0" prefWidth="355.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="190.0" text="Krankenwagen" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="ambulanceYes" mnemonicParsing="false" onAction="#handelCheckBox" prefHeight="40.0" prefWidth="93.0" text="Ja" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="ambulanceNo" mnemonicParsing="false" onAction="#handelCheckBox" prefHeight="40.0" prefWidth="93.0" text="Nein" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="144.0" prefWidth="355.0">
+                     <children>
+                        <Label prefHeight="43.0" prefWidth="232.0" text="Medikamente" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <GridPane prefHeight="166.0" prefWidth="220.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="54.0" minWidth="10.0" prefWidth="40.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="72.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="73.0" minWidth="10.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="66.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label prefHeight="35.0" prefWidth="125.0" text="I.V." textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="med11" alignment="CENTER" maxWidth="59.0" prefHeight="34.0" prefWidth="59.0" text="0" GridPane.columnIndex="1">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></TextField>
+                              <Label prefHeight="35.0" prefWidth="125.0" text="S" textFill="WHITE" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="med12" alignment="CENTER" maxWidth="59.0" prefHeight="34.0" prefWidth="59.0" text="0" GridPane.columnIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></TextField>
+                              <Label prefHeight="35.0" prefWidth="125.0" text="A.B" textFill="WHITE" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="35.0" prefWidth="125.0" text="K.T" textFill="WHITE" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="med31" alignment="CENTER" maxWidth="59.0" prefHeight="34.0" prefWidth="59.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></TextField>
+                              <TextField fx:id="med21" alignment="CENTER" maxWidth="59.0" prefHeight="34.0" prefWidth="59.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></TextField>
+                              <TextField fx:id="med32" alignment="CENTER" maxWidth="59.0" prefHeight="34.0" prefWidth="59.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></TextField>
+                              <TextField fx:id="med22" alignment="CENTER" maxWidth="59.0" prefHeight="34.0" prefWidth="59.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></TextField>
+                              <Label prefHeight="35.0" prefWidth="125.0" text="T" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="35.0" prefWidth="125.0" text="B" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="355.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="190.0" text="Mahlzeiten" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="mealYes" mnemonicParsing="false" onAction="#handelCheckBox" prefHeight="40.0" prefWidth="93.0" text="Ja" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="mealNo" mnemonicParsing="false" onAction="#handelCheckBox" prefHeight="40.0" prefWidth="93.0" text="Nein" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+                  <GridPane fx:id="meal" opacity="0.58" prefHeight="132.0" prefWidth="351.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="182.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="51.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.0" minWidth="10.0" prefWidth="55.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.0" minWidth="10.0" prefWidth="68.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="190.0" text="Frühstück" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="190.0" text="Abendessen" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="190.0" text="Mittagessen" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="breakfastPlus" mnemonicParsing="false" onAction="#eatManipulateHandler" prefHeight="30.0" prefWidth="32.0" text="+" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="breakfastMinus" mnemonicParsing="false" onAction="#eatManipulateHandler" prefHeight="30.0" prefWidth="32.0" text="-" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="lunchPlus" mnemonicParsing="false" onAction="#eatManipulateHandler" prefHeight="30.0" prefWidth="32.0" text="+" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="dinnerPlus" mnemonicParsing="false" onAction="#eatManipulateHandler" prefHeight="30.0" prefWidth="32.0" text="+" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="lunchMinus" mnemonicParsing="false" onAction="#eatManipulateHandler" prefHeight="30.0" prefWidth="32.0" text="-" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="dinnerMinus" mnemonicParsing="false" onAction="#eatManipulateHandler" prefHeight="30.0" prefWidth="32.0" text="-" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="breakfastQuantity" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="50.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="0" textAlignment="CENTER" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lunchQuantity" alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="50.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dinnerQuantity" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="50.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Label alignment="CENTER" prefHeight="43.0" prefWidth="355.0" text="Diagnoseverfahren" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <GridPane prefHeight="79.0" prefWidth="361.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.0" minWidth="10.0" prefWidth="99.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="116.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="131.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="bloodTest" mnemonicParsing="false" prefHeight="40.0" prefWidth="93.0" text="Bluttest" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="urineTest" mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" text="Urineanalyse" textFill="WHITE" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="stoolTest" mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" text="Stuhlanalyse" textFill="WHITE" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="mrt" mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" text="MRT" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="ct" mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" text="CT" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" text="Röntgen" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1" fx:id="xray">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </GridPane>
+                  <Line endX="248.2928924560547" endY="-1.6568543910980225" startX="-100.0" stroke="WHITE" strokeWidth="5.0">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Line>
+                  <HBox prefHeight="65.0" prefWidth="356.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="168.0" text="Total" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="total" prefHeight="35.0" prefWidth="207.0" text="0.00" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="167.0" text="MwSt" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tax" prefHeight="35.0" prefWidth="190.0" text="0.00" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Label layoutX="14.0" layoutY="4.0" prefHeight="30.0" prefWidth="217.0" text="Made with         by: Robin &amp; Hanane" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="57.0" layoutY="721.0" mnemonicParsing="false" onAction="#calc" prefHeight="53.0" prefWidth="172.0" style="-fx-background-radius: 10;" text="Rechnen">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="244.0" layoutY="720.0" mnemonicParsing="false" onAction="#reset" prefHeight="53.0" prefWidth="182.0" style="-fx-background-radius: 10;" text="Zurücksetzen">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="987.0" layoutY="722.0" mnemonicParsing="false" onAction="#printTheBill" prefHeight="53.0" prefWidth="172.0" style="-fx-background-radius: 10;" text="Ausdrucken">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <SVGPath content="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" fill="WHITE" layoutX="-167.0" layoutY="-242.0" style="-fx-scale-x: 4%; -fx-scale-y: 4%;" />
+      <Button layoutX="502.0" layoutY="720.0" mnemonicParsing="false" onAction="#triger" prefHeight="53.0" prefWidth="296.0" style="-fx-background-radius: 10;" text="Vorherige Patienten">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
